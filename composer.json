@@ -1,0 +1,26 @@
+{
+  "name": "dtolstokorov/basic-php",
+  "description": "Plesk php basic course",
+  "authors": [
+    {
+      "name": "Dmitry Tolstokorov",
+      "email": "dtolstokorov@plesk.com"
+    }
+  ],
+  "require": {
+    "squizlabs/php_codesniffer": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "BasicPhp\\": "src/",
+      "BasicPhp\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "test": "phpunit",
+    "lint": "phpcs --standard=PSR12 ./src"
+  }
+}
