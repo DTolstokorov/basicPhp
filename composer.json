@@ -13,7 +13,7 @@
   "autoload": {
     "psr-4": {
       "BasicPhp\\": "src/",
-      "BasicPhp\\Tests": "tests/"
+      "BasicPhp\\Tests\\": "tests/"
     }
   },
   "require-dev": {
