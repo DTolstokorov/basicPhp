@@ -1,6 +1,6 @@
 <?php
 
-namespace Lessons;
+namespace BasicPhp\Tests\Lessons;
 
 use BasicPhp\Logger\FakeLogger;
 use PHPUnit\Framework\TestCase;
@@ -9,9 +9,9 @@ class Task2Test extends TestCase
 {
     private FakeLogger $logger;
 
-    public function __construct(?string $name = null, array $data = [], $dataName = '')
+    public function setUp(): void
     {
-        parent::__construct($name, $data, $dataName);
+        parent::setUp();
         $this->logger = new FakeLogger();
     }
 

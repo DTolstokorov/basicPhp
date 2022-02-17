@@ -1,6 +1,6 @@
 <?php
 
-namespace Lessons;
+namespace BasicPhp\Tests\Lessons;
 
 use PHPUnit\Framework\TestCase;
 
@@ -9,7 +9,7 @@ class Task4Test extends TestCase
     /**
      * @dataProvider addDigitsProvider
      */
-    public function testAddDigits($num, $expected): void
+    public function testAddDigits(int $num, int $expected): void
     {
         $task4 = new \BasicPhp\Lessons\Task4();
 
