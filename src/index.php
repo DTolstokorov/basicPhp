@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 //echo (new \BasicPhp\Lessons\Task1())->binarySum('111', '100');
 //echo (new \BasicPhp\Lessons\Task7())->isHappy('101101');

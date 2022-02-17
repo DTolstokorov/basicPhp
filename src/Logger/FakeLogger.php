@@ -26,6 +26,5 @@ class FakeLogger implements LoggerInterface
 
     public function log(string $msg): void
     {
-        // TODO: Implement log() method.
     }
 }

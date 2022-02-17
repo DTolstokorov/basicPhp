@@ -9,7 +9,7 @@ class Task6Test extends TestCase
     /**
      * @dataProvider isPerfectProvider
      */
-    public function testIsPerfect($expected, $number): void
+    public function testIsPerfect(bool $expected, int $number): void
     {
         $task6 = new \BasicPhp\Lessons\Task6();
 

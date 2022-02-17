@@ -6,14 +6,14 @@ class Task7
 {
     public function isHappy(string $number): bool
     {
-        $lenght = strlen($number);
+        $length = strlen($number);
 
-        if ($lenght % 2 !== 0 || $lenght === 0) {
+        if ($length % 2 !== 0 || $length === 0) {
             throw new \Exception('Wrong number!');
         }
 
-        $firstHalf = $this->countSumm(substr($number, $lenght / 2));
-        $secondHalf = $this->countSumm(substr($number, 0, $lenght / 2));
+        $firstHalf = $this->countSumm(substr($number, $length / 2));
+        $secondHalf = $this->countSumm(substr($number, 0, $length / 2));
 
         return $firstHalf === $secondHalf;
     }

@@ -19,15 +19,15 @@ class Task8
 
         for ($i = $begin; $i <= $end; $i++) {
             if ($i % 3 === 0 && $i % 5 === 0) {
-                $result .= ("FizzBuzz ");
+                $result .= "FizzBuzz ";
             } elseif ($i % 3 === 0) {
                 $result .= ("Fizz ");
             } elseif ($i % 5 === 0) {
-                $result .=  ("Buzz ");
+                $result .=  "Buzz ";
             } else {
                 $result .= "{$i} ";
             }
         }
-        return ($result);
+        return $result;
     }
 }

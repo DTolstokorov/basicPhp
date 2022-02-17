@@ -9,19 +9,19 @@ class Task8Test extends Testcase
     /**
      * @dataProvider fizzBuzzProvider
      */
-    public function testFizzBuzz(int $start, int $end, string $expected): void
+    public function testFizzBuzz(string $expected, int $start, int $end): void
     {
         $task8 = new \BasicPhp\Lessons\Task8();
 
-        self::assertEquals($task8->generateFizzBuzz($start, $end), $expected);
+        self::assertEquals($expected, $task8->generateFizzBuzz($start, $end));
     }
 
     public function fizzBuzzProvider(): array
     {
         return [
-            [11, 20, '11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz '],
-            [0, -5, ''],
-            [1, 1, '1 '],
+            ['11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz ', 11, 20],
+            ['', 0, -5],
+            ['1 ', 1, 1],
         ];
     }
 }

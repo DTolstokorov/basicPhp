@@ -9,7 +9,7 @@ class Task7Test extends Testcase
     /**
      * @dataProvider isHappyWrongProvider
      */
-    public function testIsHappyThrowedException($value, $exception): void
+    public function testIsHappyThrowedException(string $value, string $exception): void
     {
         $task7 = new \BasicPhp\Lessons\Task7();
 
@@ -28,7 +28,7 @@ class Task7Test extends Testcase
     /**
      * @dataProvider isHappyProvider
      */
-    public function testisHappy($expected, $num): void
+    public function testisHappy(bool $expected, string $num): void
     {
         $task7 = new \BasicPhp\Lessons\Task7();
 

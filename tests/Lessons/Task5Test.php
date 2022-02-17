@@ -9,7 +9,7 @@ class Task5Test extends TestCase
     /**
      * @dataProvider bracketsProvider
      */
-    public function testBrackets($expected, string $string): void
+    public function testBrackets(bool $expected, string $string): void
     {
         $task5 = new \BasicPhp\Lessons\Task5();
 
