@@ -19,6 +19,7 @@ class Task2Test extends TestCase
     {
         $task2 = new \BasicPhp\Lessons\Task2($this->logger);
         $task2 = new \BasicPhp\Lessons\Task2($this->logger);
+        $task2 = new \BasicPhp\Lessons\Task2($this->logger);
 
         $task2->isPowerOfThree(-2);
         $task2->isPowerOfThree(-2);
