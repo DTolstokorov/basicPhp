@@ -8,6 +8,7 @@ use PHPUnit\Framework\TestCase;
 class Task2Test extends TestCase
 {
     private FakeLogger $logger;
+    echo '123';
 
     public function setUp(): void
     {
